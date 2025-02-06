@@ -1,10 +1,6 @@
 package com.amazon.ata.inmemorycaching.classroom.dao;
 
-import com.amazon.ata.inmemorycaching.classroom.dao.models.Group;
-import com.amazon.ata.inmemorycaching.classroom.dao.models.GroupMembership;
-import com.amazon.ata.inmemorycaching.classroom.dao.models.GroupMembershipAudit;
-import com.amazon.ata.inmemorycaching.classroom.dao.models.GroupMembershipAuditAction;
-import com.amazon.ata.inmemorycaching.classroom.dao.models.GroupType;
+import com.amazon.ata.inmemorycaching.classroom.dao.models.*;
 
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapper;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBQueryExpression;
@@ -68,6 +64,9 @@ public class GroupMembershipDao {
         membership = mapper.load(membership);
 
         return membership != null;
+    }
+    public boolean isUserInGroup(GroupMembershipCacheKey theCacheKey) {
+        return this.isUserInGroup(theCacheKey.getUserId(), theCacheKey.getGroupId());
     }
 
     /**

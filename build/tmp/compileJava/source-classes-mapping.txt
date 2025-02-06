@@ -34,7 +34,7 @@ com/amazon/ata/inmemorycaching/classroom/dao/models/GroupMembershipAudit.java
  com.amazon.ata.inmemorycaching.classroom.dao.models.GroupMembershipAudit
 com/amazon/ata/inmemorycaching/classroom/dependency/ServiceComponent.java
  com.amazon.ata.inmemorycaching.classroom.dependency.ServiceComponent
-com/amazon/ata/inmemorycaching/classroom/dao/GroupMembershipCachingDao.java
- com.amazon.ata.inmemorycaching.classroom.dao.GroupMembershipCachingDao
 com/amazon/ata/inmemorycaching/classroom/dao/models/GroupMembershipAuditAction.java
  com.amazon.ata.inmemorycaching.classroom.dao.models.GroupMembershipAuditAction
+com/amazon/ata/inmemorycaching/classroom/dao/GroupMembershipCachingDao.java
+ com.amazon.ata.inmemorycaching.classroom.dao.GroupMembershipCachingDao

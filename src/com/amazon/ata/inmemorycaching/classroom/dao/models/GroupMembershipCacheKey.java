@@ -2,6 +2,8 @@ package com.amazon.ata.inmemorycaching.classroom.dao.models;
 
 import java.util.Objects;
 
+//this is the key for accessing the cache
+// since it requires multiple values, we need to hold and manage value
 public final class GroupMembershipCacheKey {
 
     private final String userId;

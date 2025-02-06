@@ -1,5 +1,6 @@
 package com.amazon.ata.inmemorycaching.classroom.activity;
 
+import com.amazon.ata.inmemorycaching.classroom.dao.GroupMembershipCachingDao;
 import com.amazon.ata.inmemorycaching.classroom.dao.GroupMembershipDao;
 
 import javax.inject.Inject;
@@ -9,14 +10,16 @@ import javax.inject.Inject;
  */
 public class CheckUserInGroupActivity {
 
-    private final GroupMembershipDao groupMembershipDao;
+   // private final GroupMembershipDao groupMembershipDao;
+    private final GroupMembershipCachingDao groupMembershipDao;
 
     /**
      * Constructs an Activity with the given DAOs.
      * @param groupMembershipDao The GroupMembershipDao to use for checking the user's membership
      */
     @Inject
-    public CheckUserInGroupActivity(final GroupMembershipDao groupMembershipDao) {
+    //public CheckUserInGroupActivity(final GroupMembershipDao groupMembershipDao) {
+    public CheckUserInGroupActivity(final GroupMembershipCachingDao groupMembershipDao) {
         this.groupMembershipDao = groupMembershipDao;
     }
 
